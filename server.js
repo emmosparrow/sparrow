@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var  ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // index route............................
 app.get('/', function (req, res, next) {
@@ -8,5 +9,5 @@ app.get('/', function (req, res, next) {
 });
 
 app.listen(port, function(){
-    console.log('Server is running on port :' + port);
+    console.log('Server is running on port :' + port , ip);
 });
