@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/emmosparrow/sparrow/issues"
   },
-  "homepage": "https://github.com/emmosparrow/sparrow#readme"
+  "homepage": "https://github.com/emmosparrow/sparrow#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
